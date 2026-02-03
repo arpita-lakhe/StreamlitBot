@@ -7,7 +7,7 @@ st.title("🤖 Gemini Chatbot (Google AI Studio)")
 # Configure API key
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("models/gemini-1.5-flash")
 
 # Initialize chat history
 if "chat" not in st.session_state:
